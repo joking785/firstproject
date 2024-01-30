@@ -1,8 +1,5 @@
-
-
 .App {
-      
-      
+   
 }
 
 .App-logo {
@@ -14,6 +11,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.SearchInput {
+    display: inline-block;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    width: 600px;
+    margin-top: 100px;
+    padding: 10px 0px 10px 30px;
+    font-size: 20px;
 }
 
 .App-header {

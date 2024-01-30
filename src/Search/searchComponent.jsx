@@ -1,11 +1,23 @@
-function searchInput(props) {
-    return (
-        <div>
-        <input placeholder={props.placeholder}>
+import React from "react";
 
-        </input>
-        </div>
-    )
+let city = null;
+
+const saveCity = (e) => {  
+    // console.log(e.key);
+        if (e.key === 'Enter') {
+            console.log(e.target.value);
+            city= e.target.value;
+            console.log(city);
+        } else return;
 }
 
-export default searchInput;
+console.log(city);
+
+function SearchInput(cityPlace) {  
+    return (           
+        <input placeholder={cityPlace.placeholder} className = "SearchInput" type="text" onKeyDown={saveCity}></input>
+     )
+}
+
+
+export default SearchInput;

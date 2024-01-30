@@ -1,12 +1,14 @@
 import './App.css';
-import Welcome from './menu';
-import searchInput from './Search/searchComponent';
+import SearchInput from './Search/searchComponent';
+
+
 
 
 const App = () => {
-    return (
+  
+  return (
       <div className = "App">
-        <searchInput placeholder = "Enter a city..."/>               
+        <SearchInput  placeholder = "Enter a city..." />          
       </div>
     )
 }
