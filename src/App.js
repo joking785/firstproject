@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Welcome from './menu';
+import searchInput from './Search/searchComponent';
 
 
 const App = () => {
     return (
       <div className = "App">
-        Simple HTML
-        <Welcome name = "Capa"/>
-        <ul>
-          <li>a</li>
-          <li>a</li>
-          <li>a</li>
-          <li>a</li>
-        </ul>
+        <searchInput placeholder = "Enter a city..."/>               
       </div>
     )
 }
 
-console.log(typeof(props));
+
 
 export default App;
